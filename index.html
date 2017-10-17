@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WCHS</title>
+<link href="Index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<img src="WCHSPHOTOS.png" width="1844" height="244" alt=""/>
+<p class="StaffSet"> Staff of the WCHS </p>
+<table width="125" >
+  <tbody>
+    <tr>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2546.JPG" width="125"  alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2547.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2548.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2549.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2550.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2551.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img src="IMG_2552.JPG" alt="" width="125" class="StaffSet"/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2554.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2555.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2556.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2557.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2558.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2559.JPG" width="125" alt=""/></td>
+      <td>&nbsp;<img class="StaffSet" src="IMG_2583.JPG" width="125" alt=""/></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p>Shyanne Waller </p></td>
+      <td>&nbsp;<p> Miles Scott </p></td>
+      <td>&nbsp;<p>Lillian Shaw</p></td>
+      <td>&nbsp;<p>Abigail Graham</p></td>
+      <td>&nbsp;<p>Jessica Jones</p></td>
+      <td>&nbsp;<p>Amanda Krom</p></td>
+      <td>&nbsp;<p>Michael Gill</p></td>
+      <td>&nbsp;<p>Braden Edmunds</p></td>
+      <td>&nbsp;<p>Ethan Lopez</p></td>
+      <td>&nbsp;<p>Joshua Dunn</p></td>
+      <td>&nbsp;<p>Allie Fisher</p></td>
+      <td>&nbsp;<p>Haven McClure</p></td>
+      <td>&nbsp;<p>Tim Brown</p></td>
+      <td>&nbsp;<p>Justine McClimont</p></td>
+    </tr>
+  </tbody>
+</table>
+	<p id="p5">Latest Video </p>          
+           
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+
+<script>
+var channelID = "UCQ8Lzvb0mSz0p5XAmZoW1zw";
+$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+   var link = data.items[0].link;
+   var id = link.substr(link.indexOf("=")+1);
+    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+});
+</script>.0
+
+</body>
+</html>

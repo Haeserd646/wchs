@@ -1,0 +1,25 @@
+@charset "utf-8";
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	text-align: center;
+	font-size: px;
+}
+
+.StaffSet {
+	font-size: 100px;
+}
+.StaffNames {
+	text-align: center;
+	border-collapse: collapse;
+	width: 53px;
+	margin: 0 auto;
+}
+body {
+	background-color: #C5B358;
+}
+#p5 {
+	font-size: 100px;
+}
